@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from '../config/FirestoreConfig';
-import Students from '../data/students.json';
+// import registerServiceWorker from '../serviceWorker';
+// import Dropdown from '../components/Dropdown';
 
 export default class Table extends Component {
     constructor(props) {
@@ -47,7 +48,7 @@ export default class Table extends Component {
                         <td>{student.name}</td>
                         <td>{student.attendance}</td>
                         <td>{student.time}</td>
-                        <td>{student.notes}</td>
+                        {/* <td>{student.notes}</td> */}
                     </tr>
                 )
             })

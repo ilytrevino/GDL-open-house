@@ -11,7 +11,7 @@ class Qr extends Component {
   constructor(props){
     super(props)
     this.state = {
-      delay: 1500,
+      delay: 2500,
       greeting: '',
       result: Blank,
       time: ''
@@ -121,9 +121,7 @@ class Qr extends Component {
           onScan={this.handleScan}
           />
         <div className="attendance-message">
-          {this.state.result !== Blank &&
-            <img className="attendance-img" src={this.state.result} alt="img"></img>
-          }
+          <img className="attendance-img" src={this.state.result} alt="img"></img>
           <h1 className="attendance-greeting">{this.state.greeting}</h1>
         </div>
       </div>
